@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wes Anderson Influences</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f2c4cc'/%3E%3Crect x='5' y='5' width='22' height='22' rx='3' fill='none' stroke='%235a1d3c' stroke-width='2'/%3E%3Ctext x='16' y='21.5' font-family='Futura,sans-serif' font-size='13' font-weight='600' text-anchor='middle' fill='%235a1d3c'%3EWA%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="An interactive StoryMap of the real-world places and cultures that shaped Wes Anderson's films.">
+
+  <!-- Fonts: Jost (a Futura-style typeface, a Wes Anderson signature) and Libre Baskerville for reading text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- StoryMapJS (the same library the original KnightLab page uses) -->
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/storymapjs/latest/css/storymap.css">
+  <script src="https://cdn.knightlab.com/libs/storymapjs/latest/js/storymap-min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#storymap">Skip to the story</a>
+
+  <header class="masthead">
+    <button class="btn btn-contents" id="toggle-contents" type="button"
+            aria-controls="contents" aria-expanded="true">
+      <span class="btn-icon" aria-hidden="true">&#9776;</span>
+      <span class="btn-label">Contents</span>
+    </button>
+
+    <div class="masthead-title">
+      <span class="rule" aria-hidden="true"></span>
+      <h1>Wes Anderson Influences</h1>
+      <span class="rule" aria-hidden="true"></span>
+    </div>
+
+    <nav class="slide-controls" aria-label="Slide navigation">
+      <button class="btn btn-round" id="prev" type="button" aria-label="Previous slide" disabled>&#8592;</button>
+      <span class="counter" id="counter" aria-live="polite">
+        <span id="counter-current">01</span><span class="counter-sep">/</span><span id="counter-total">--</span>
+      </span>
+      <button class="btn btn-round" id="next" type="button" aria-label="Next slide" disabled>&#8594;</button>
+    </nav>
+
+    <div class="progress" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
+  </header>
+
+  <div class="layout" id="layout">
+    <aside class="contents" id="contents" aria-label="Table of contents">
+      <p class="contents-heading">Contents</p>
+      <ol class="contents-list" id="contents-list">
+        <!-- Filled in from the StoryMap data by js/app.js -->
+      </ol>
+      <p class="contents-hint">Tip: use the <kbd>&larr;</kbd> <kbd>&rarr;</kbd> arrow keys to move between slides.</p>
+    </aside>
+
+    <div class="scrim" id="scrim" hidden></div>
+
+    <main class="stage">
+      <div id="storymap" class="storymap" tabindex="-1">
+        <p class="loading">Loading the story&hellip;</p>
+      </div>
+    </main>
+  </div>
+
+  <footer class="colophon">
+    <span class="built-with">Built with <a href="https://storymap.knightlab.com/" target="_blank" rel="noopener">StoryMapJS</a></span>
+    <span class="dot" aria-hidden="true">&#9670;</span>
+    <a href="https://uploads.knightlab.com/storymapjs/0a9a05b0f3202d24d2d8ab63022cae0a/wes-anderson-influences/index.html" target="_blank" rel="noopener">Original StoryMap</a>
+    <span class="dot" aria-hidden="true">&#9670;</span>
+    <a href="https://github.com/Gkaster57/ImprovedDHfinal/blob/main/AI_USAGE_LOG.md" target="_blank" rel="noopener">AI Usage Log</a>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
