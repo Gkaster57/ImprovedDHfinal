@@ -378,6 +378,48 @@ kbd {
   filter: sepia(.28) saturate(.85) hue-rotate(-8deg) brightness(1.03);
 }
 
+/* Map markers: a movie-camera emoji badge instead of StoryMap's image/video pins. */
+.storymap .vco-mapmarker-icon::before {
+  content: '\1F3A5' !important; /* 🎥 movie camera */
+  position: absolute !important;
+  left: 50% !important;
+  top: 2px !important;
+  width: 34px !important;
+  height: 34px !important;
+  margin: 0 !important;
+  transform: translateX(-50%);
+  font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif !important;
+  font-size: 18px !important;
+  line-height: 31px !important;
+  text-align: center;
+  color: initial !important;
+  background: var(--paper) !important;
+  border: 2px solid var(--plum);
+  border-radius: 50%;
+  box-shadow: 2px 2px 0 var(--pink-deep);
+  transition: transform .2s var(--ease), background-color .2s var(--ease);
+}
+.storymap .vco-mapmarker-icon::after {
+  content: '' !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 37px !important;
+  width: 0 !important;
+  height: 0 !important;
+  transform: translateX(-50%);
+  background: none !important;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 9px solid var(--plum);
+}
+.storymap .vco-mapmarker-icon:hover::before {
+  transform: translateX(-50%) scale(1.1);
+}
+.storymap .vco-mapmarker-icon.vco-mapmarker-active::before {
+  background: var(--mustard) !important;
+  transform: translateX(-50%) scale(1.18);
+}
+
 /* StoryMap's own previous/next arrows. */
 .storymap .vco-slidenav-title,
 .storymap .vco-slidenav-description {

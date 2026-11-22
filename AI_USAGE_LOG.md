@@ -228,3 +228,22 @@ which I signed in to myself (the AI never saw my password).
 **Files changed:** `README.md`, `AI_USAGE_LOG.md` (plus the repository's About settings on GitHub)
 
 **Content check:** No changes to my StoryMap writing.
+
+---
+
+## Session 1 (continued) — 2026-11-22: Movie-camera map markers
+
+**My request:**
+> Could you please replace the icons on the map with the movie camera emoji?
+
+**What the AI did:**
+- Replaced StoryMap's default image/video map pins with a 🎥 (movie camera) emoji badge in the
+  site's color scheme: a cream circle with a plum border and pointer. The marker for the slide being
+  viewed is enlarged and turns mustard yellow.
+- This was done only with the site's stylesheet (`css/style.css`), so my StoryMap data and the
+  original KnightLab StoryMap are unchanged. The original KnightLab page still shows its default pins.
+- Tested in a browser on the opening overview map and on individual slides.
+
+**Files changed:** `css/style.css`, `AI_USAGE_LOG.md`
+
+**Content check:** No changes to my StoryMap writing.
