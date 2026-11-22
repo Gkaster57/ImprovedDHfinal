@@ -137,3 +137,38 @@ the README.
 **Files changed:** `AI_USAGE_LOG.md`
 
 **Content check:** No changes to my StoryMap writing.
+
+---
+
+## Session 1 (continued) — 2026-11-22: Fact check
+
+**My request:**
+> Please fact check the information presented on the website
+
+**What the AI did:**
+- Checked the claims on all 13 slides against web sources (Dezeen, Focus Features, Library of
+  Congress, Roald Dahl Museum, D Magazine, Boston.com, Screen Daily and others) and reported
+  the results to me in the chat.
+- Checked that every slide's image and video link still loads (all 13 do).
+- **Did not edit any slide content.** Any corrections are mine to make in the KnightLab editor.
+
+**Main findings reported:**
+- Credits: *The Darjeeling Limited* and *The Grand Budapest Hotel* were released by Fox Searchlight,
+  not Columbia Pictures. (Columbia is correct for *Bottle Rocket*.)
+- *The Darjeeling Limited* was not Anderson's first film shot outside the U.S.; *The Life Aquatic*
+  (2004) was shot in Italy.
+- *The Life Aquatic*: no source found that the New York Explorers Club building inspired the film's
+  set, and the film opens at a festival in Italy, not at the Explorers Club.
+- *The Grand Budapest Hotel*: Görlitz was the main filming location; the hotel's main architectural
+  model was the Grandhotel Pupp in Karlovy Vary (Czech Republic).
+- *The Phoenician Scheme*: Villa Farnesina inspired part of the mansion (the painted-perspective
+  gallery), not the whole mansion; the film was shot at Studio Babelsberg in Germany.
+- *Asteroid City*: filmed on farmland near Chinchón, and the town was built by production designer
+  Adam Stockhausen's team.
+- Confirmed: Bottle Rocket/Brookhaven (Farmers Branch), Rushmore/St. John's, Tenenbaum house
+  (Adolph Hoak), Fantastic Mr. Fox/Gipsy House and the Writing Hut, Henry Sugar, Moonrise
+  Kingdom/Naushon Island, Isle of Dogs/Imperial Hotel → Brick Mansion, French Dispatch/Angoulême.
+
+**Files changed:** `AI_USAGE_LOG.md`
+
+**Content check:** No changes to my StoryMap writing.
