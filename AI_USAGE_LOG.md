@@ -120,3 +120,20 @@ the README.
   improvements live in this GitHub repository as a site built around my StoryMap.
 - To give the improved version its own public web address, GitHub Pages must be turned on in the
   repository settings (Settings → Pages → Deploy from branch → `main` / root).
+
+### Follow-up (same session)
+
+> those were typos. I also did the first thing you suggested.
+
+(Referring to the misspelled git name/email the AI pointed out, and to turning on GitHub Pages.)
+
+**What the AI did:**
+- Corrected my git name and email on my Mac (`git config --global`), at my confirmation that the
+  old values were typos.
+- Confirmed the site is live on GitHub Pages at https://gkaster57.github.io/ImprovedDHfinal/ and
+  checked in a browser that all 13 slides, the map and the navigation load correctly.
+- Added this entry to the log.
+
+**Files changed:** `AI_USAGE_LOG.md`
+
+**Content check:** No changes to my StoryMap writing.
