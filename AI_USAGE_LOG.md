@@ -172,3 +172,37 @@ the README.
 **Files changed:** `AI_USAGE_LOG.md`
 
 **Content check:** No changes to my StoryMap writing.
+
+---
+
+## Session 1 (continued) — 2026-11-22: Corrections from the fact check
+
+**My request:**
+> Please change the incorrect credit stated in 1, and change the starting sentence in the
+> description of the darjeeling limited to "Starting with 2007's The Darjeeling Limited, Wes
+> Anderson spread his sights wider and started to take influences from India." for 6, change the
+> 2nd sentence in the asteroid city description to "This area's seemingly endless desert, clear
+> skies, and colored soild were accomplished through forced perspective and set design, helping to
+> sell the illusion of being set in America, when finding a filming location similar to this in
+> the states would be nearly impossible."
+
+I chose to have the AI make the edits in the KnightLab editor using a separate test browser,
+which I signed in to myself (the AI never saw my password).
+
+**What the AI did (in the KnightLab editor, then clicked Save and Publish Changes):**
+
+| Slide | Field | Before | After |
+| --- | --- | --- | --- |
+| 6 – The Darjeeling Limited | Media credit | Columbia Pictures, Movie Camera Shots | Fox Searchlight Pictures, Movie Camera Shots |
+| 6 – The Darjeeling Limited | First sentence | …Wes Anderson started to branch out and take influences from cultures outside of The United States. | …Wes Anderson spread his sights wider and started to take influences from India. |
+| 9 – The Grand Budapest Hotel | Media credit | Columbia Pictures, Searchlight Pictures | Searchlight Pictures |
+| 12 – Asteroid City | Second sentence | This area's seemingly endless desert, clear skies, and colored soil helped sell the illusion… | This area's seemingly endless desert, clear skies, and colored soil were accomplished through forced perspective and set design, helping to sell the illusion… |
+
+- The sentences are my wording. The AI corrected one typo in my request ("soild" → "soil")
+  and told me it had done so.
+- Before publishing, the AI confirmed my saved draft had no other unpublished changes. After
+  publishing, it compared the new published data with the old and confirmed that only these four
+  fields changed.
+- Updated the backup copy `data/published.json` to match the newly published StoryMap.
+
+**Files changed:** `data/published.json`, `AI_USAGE_LOG.md` (plus my KnightLab StoryMap, as above)
