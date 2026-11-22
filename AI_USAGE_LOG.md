@@ -206,3 +206,25 @@ which I signed in to myself (the AI never saw my password).
 - Updated the backup copy `data/published.json` to match the newly published StoryMap.
 
 **Files changed:** `data/published.json`, `AI_USAGE_LOG.md` (plus my KnightLab StoryMap, as above)
+
+---
+
+## Session 1 (continued) — 2026-11-22: Making the site easy to find
+
+**My request:**
+> Please make the edited site easier to access on the github repository, now that I have turned
+> on pages
+
+**What the AI did:**
+- Set the repository's **Website** link (About panel) to https://gkaster57.github.io/ImprovedDHfinal/
+  and added the topics `digital-humanities`, `storymap` and `wes-anderson`. My repository
+  description was left unchanged.
+- Added a prominent "View the site" link and a quick-links row (live site, original StoryMap,
+  AI usage log) to the top of `README.md`, directly below my original two lines, which were
+  kept exactly as written.
+- Updated the AI-written README sections so they no longer say Pages still needs to be turned on,
+  and added an example of linking straight to a slide.
+
+**Files changed:** `README.md`, `AI_USAGE_LOG.md` (plus the repository's About settings on GitHub)
+
+**Content check:** No changes to my StoryMap writing.
