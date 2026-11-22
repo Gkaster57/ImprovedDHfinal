@@ -215,6 +215,47 @@
     setCurrent(start);
   }
 
+  /* ---------- full-screen YouTube videos ---------- */
+
+  // StoryMapJS creates its YouTube players with `fs: 0`, which hides
+  // YouTube's full-screen button. When the YouTube player library loads,
+  // wrap its constructor so every player is created with full screen enabled.
+  // (StoryMap's own controls, such as pausing on slide change, keep working.)
+  function enableVideoFullscreen() {
+    function patch() {
+      var YT = window.YT;
+      if (!YT || typeof YT.Player !== 'function' || YT.Player.__fullscreenPatched) { return; }
+      var Original = YT.Player;
+      var Patched = function (el, opts) {
+        if (opts) {
+          opts.playerVars = opts.playerVars || {};
+          opts.playerVars.fs = 1;
+        }
+        return new Original(el, opts);
+      };
+      Patched.prototype = Original.prototype;
+      Patched.__fullscreenPatched = true;
+      YT.Player = Patched;
+    }
+
+    var tries = 0;
+    var timer = window.setInterval(function () {
+      var YT = window.YT;
+      if (YT && typeof YT.Player === 'function') {
+        patch();
+        window.clearInterval(timer);
+      } else if (YT && typeof YT.ready === 'function') {
+        // The loader is present; patch the moment the player library is ready,
+        // before StoryMap gets a chance to create any players.
+        YT.ready(patch);
+        window.clearInterval(timer);
+      } else if (++tries > 1200) { // give up after ~60 seconds (no videos on the page)
+        window.clearInterval(timer);
+      }
+    }, 50);
+  }
+
+  enableVideoFullscreen();
   bindControls();
   setContentsOpen(!MOBILE_QUERY.matches);
 

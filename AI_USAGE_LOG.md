@@ -247,3 +247,26 @@ which I signed in to myself (the AI never saw my password).
 **Files changed:** `css/style.css`, `AI_USAGE_LOG.md`
 
 **Content check:** No changes to my StoryMap writing.
+
+---
+
+## Session 1 (continued) — 2026-11-22: Full-screen videos
+
+**My request:**
+> It doesn't look like i can put the videos into full screen, is this possible to fix?
+
+**What the AI found:** StoryMapJS creates its YouTube players with the setting `fs: 0`, which
+hides YouTube's full-screen button. This happens in KnightLab's own code, so it affected the
+original StoryMap too.
+
+**What the AI did:**
+- Added a small fix to `js/app.js`: when YouTube's player library loads, the site makes sure every
+  video player is created with full screen turned on (`fs: 1`).
+- Tested all three videos (Bottle Rocket, The Darjeeling Limited, The Grand Budapest Hotel): the
+  full-screen button now appears, and StoryMap still pauses a playing video when you move to
+  another slide.
+- The videos themselves, captions and credits were not changed.
+
+**Files changed:** `js/app.js`, `AI_USAGE_LOG.md`
+
+**Content check:** No changes to my StoryMap writing.
